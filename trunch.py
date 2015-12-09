@@ -8,7 +8,7 @@ filelist = []
 # these are the Paths that the script will search
 paths = ["C:\\","F:\\","K:\\","X:\\","I:\\","U:\\"]
 # input you're own default file path here to have the files written to a folder of your choice.
-defaultFilePath = "C:\\"
+defaultFilePath = "C:\\Users\\tbh643\\Documents\\dataMining\\"
 cmd = ""
 
 
@@ -25,10 +25,10 @@ def listDirByName(directory,searchParam,):
         for file in files:
             _tmp = file.split('/')
             if any(searchParam in s for s in _tmp):
-                filelist.append(os.path.join(root, file))
+                clear()
                 count += 1
-            else:
-                proc = 'Processing: '+str(count)
+                filelist.append(os.path.join(root, file))
+                proc = 'Found: '+str(count)+' references.'
                 print(proc, end='\n')
 
 
