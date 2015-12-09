@@ -8,7 +8,7 @@ filelist = []
 # these are the Paths that the script will search
 paths = ["C:\\","F:\\","K:\\","X:\\","I:\\","U:\\"]
 # input you're own default file path here to have the files written to a folder of your choice.
-defaultFilePath = "C:\\Users\\tbh643\\Documents\\dataMining\\"
+defaultFilePath = "C:\\"
 cmd = ""
 
 
